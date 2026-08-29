@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Di Mario Restaurante - Almoço & Marmitex no Cangaíba</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { background-color: #121212; color: #f5f5f5; line-height: 1.6; }
+    header { background-color: #1a1a1a; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #e53935; position: sticky; top: 0; z-index: 100; }
+    .logo { color: #f5a623; font-weight: bold; font-size: 1.2rem; display: flex; align-items: center; gap: 8px; }
+    .btn-header { background: #e53935; color: white; border: none; padding: 8px 16px; border-radius: 20px; font-weight: bold; text-decoration: none; font-size: 0.9rem; }
+    
+    .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80') center/cover; padding: 40px 20px; text-align: center; }
+    .badge { background: rgba(229, 57, 53, 0.2); color: #ff6b6b; border: 1px solid #e53935; padding: 5px 12px; border-radius: 15px; font-size: 0.8rem; display: inline-block; margin-bottom: 15px; font-weight: bold; }
+    .hero h1 { font-size: 1.8rem; margin-bottom: 10px; color: #ffffff; }
+    .hero p { font-size: 0.95rem; color: #ccc; margin-bottom: 25px; }
+    .btn-principal { background: #25d366; color: white; padding: 14px 24px; border-radius: 30px; text-decoration: none; font-weight: bold; font-size: 1rem; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3); }
+
+    .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; padding: 20px; max-width: 600px; margin: 0 auto; }
+    .stat-card { background: #1e1e1e; padding: 15px; border-radius: 12px; text-align: center; border: 1px solid #333; }
+    .stat-number { font-size: 1.2rem; font-weight: bold; color: #f5a623; }
+    .stat-text { font-size: 0.8rem; color: #aaa; margin-top: 4px; }
+
+    .menu-section { padding: 20px; max-width: 600px; margin: 0 auto; }
+    .section-title { font-size: 1.3rem; margin-bottom: 15px; color: #f5a623; display: flex; justify-content: space-between; align-items: flex-end; }
+    .section-subtitle { font-size: 0.8rem; color: #888; font-weight: normal; }
+    
+    .card-item { background: #1e1e1e; border-radius: 12px; border: 1px solid #333; margin-bottom: 15px; overflow: hidden; display: flex; gap: 12px; padding: 12px; }
+    .card-img { width: 90px; height: 90px; border-radius: 8px; object-fit: cover; flex-shrink: 0; }
+    .card-info { flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
+    .card-title { font-size: 1rem; color: #fff; font-weight: bold; margin-bottom: 4px; }
+    .card-desc { font-size: 0.8rem; color: #aaa; margin-bottom: 8px; }
+    .card-bottom { display: flex; justify-content: space-between; align-items: center; }
+    .card-price { color: #f5a623; font-weight: bold; font-size: 1.1rem; }
+    .btn-pedir { background: #f5a623; color: #121212; padding: 6px 14px; border-radius: 15px; text-decoration: none; font-weight: bold; font-size: 0.8rem; }
+
+    .footer { text-align: center; padding: 30px 20px; background: #1a1a1a; color: #888; font-size: 0.85rem; border-top: 1px solid #333; margin-top: 20px; }
+    .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; font-size: 28px; box-shadow: 0 4px 12px rgba(0,0,0,0.4); z-index: 1000; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">🍽️ Di Mario</div>
+    <a href="https://wa.me/551126425294" class="btn-header">Pedir Almoço</a>
+  </header>
+
+  <section class="hero">
+    <span class="badge">ALMOÇO & MARMITEX NO CANGAÍBA</span>
+    <h1>Comida Caseira & Pratos Executivos</h1>
+    <p>O sabor e o tempero de verdade para o seu dia a dia na Zona Leste de São Paulo.</p>
+    <a href="https://wa.me/551126425294" class="btn-principal">
+      💬 Fazer Pedido pelo WhatsApp
+    </a>
+  </section>
+
+  <div class="stats">
+    <div class="stat-card">
+      <div class="stat-number">⭐ 4.5 / 5.0</div>
+      <div class="stat-text">+430 avaliações no Google</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">🛵 Entrega Rápida</div>
+      <div class="stat-text">Cangaíba e Região</div>
+    </div>
+  </div>
+
+  <section class="menu-section">
+    <div class="section-title">
+      Destaques do Dia
+      <span class="section-subtitle">Refeições & Marmitex</span>
+    </div>
+
+    <div class="card-item">
+      <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=300&q=80" class="card-img" alt="Prato Executivo">
+      <div class="card-info">
+        <div>
+          <div class="card-title">Prato Executivo do Dia</div>
+          <div class="card-desc">Arroz, feijão caseiro, farofa, salada fresca e proteína à sua escolha.</div>
+        </div>
+        <div class="card-bottom">
+          <span class="card-price">R$ 28,90</span>
+          <a href="https://wa.me/551126425294?text=Olá!%20Gostaria%20de%20pedir%20o%20Prato%20Executivo%20do%20Dia" class="btn-pedir">Pedir</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-item">
+      <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=300&q=80" class="card-img" alt="Bife a Parmegiana">
+      <div class="card-info">
+        <div>
+          <div class="card-title">Bife à Parmegiana Especial</div>
+          <div class="card-desc">Bife empanado, molho de tomate artesanal, queijo derretido, arroz e fritas.</div>
+        </div>
+        <div class="card-bottom">
+          <span class="card-price">R$ 34,90</span>
+          <a href="https://wa.me/551126425294?text=Olá!%20Gostaria%20de%20pedir%20o%20Bife%20à%20Parmegiana" class="btn-pedir">Pedir</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-item">
+      <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=300&q=80" class="card-img" alt="Marmitex Tradicional">
+      <div class="card-info">
+        <div>
+          <div class="card-title">Marmitex Tradicional</div>
+          <div class="card-desc">Refeição bem servida com a opção de carne, frango ou linguiça acebolada.</div>
+        </div>
+        <div class="card-bottom">
+          <span class="card-price">R$ 24,90</span>
+          <a href="https://wa.me/551126425294?text=Olá!%20Gostaria%20de%20pedir%20o%20Marmitex%20Tradicional" class="btn-pedir">Pedir</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p><strong>Di Mario Restaurante</strong></p>
+    <p>Av. Cangaíba, 2341 - Cangaíba, São Paulo - SP</p>
+    <p style="margin-top: 10px; font-size: 0.75rem; color: #666;">© 2026 Presença Digital Automática</p>
+  </footer>
+
+  <a href="https://wa.me/551126425294" class="whatsapp-float" target="_blank">💬</a>
+
+</body>
+</html>
+LL
